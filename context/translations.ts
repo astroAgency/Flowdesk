@@ -1,4 +1,4 @@
-export type Language = "es" | "en"
+export type Language = "es" | "en";
 
 export const translations: Record<Language, Record<string, string>> = {
   en: {
@@ -13,7 +13,8 @@ export const translations: Record<Language, Record<string, string>> = {
     // HERO
     "hero.headline1": "Your team's work,",
     "hero.headline2": "finally in one place.",
-    "hero.sub": "Flowdesk brings tasks, docs, and chat together so your team spends less time switching tabs and more time shipping.",
+    "hero.sub":
+      "Flowdesk brings tasks, docs, and chat together so your team spends less time switching tabs and more time shipping.",
     "hero.cta1": "Start for free",
     "hero.cta2": "See how it works",
     "hero.trust": "Free forever for teams under 5 · No credit card required",
@@ -26,17 +27,23 @@ export const translations: Record<Language, Record<string, string>> = {
     "features.title": "Everything your team needs, nothing it doesn't",
     "features.sub": "Built for async-first teams who value focus over noise.",
     "features.tasks.name": "Task Boards",
-    "features.tasks.desc": "Kanban, list, or timeline view. Your team, your workflow.",
+    "features.tasks.desc":
+      "Kanban, list, or timeline view. Your team, your workflow.",
     "features.chat.name": "Team Chat",
-    "features.chat.desc": "Threaded conversations tied to tasks. Context always included.",
+    "features.chat.desc":
+      "Threaded conversations tied to tasks. Context always included.",
     "features.docs.name": "Shared Docs",
-    "features.docs.desc": "Write, collaborate, and publish docs without leaving Flowdesk.",
+    "features.docs.desc":
+      "Write, collaborate, and publish docs without leaving Flowdesk.",
     "features.auto.name": "Automations",
-    "features.auto.desc": "Set triggers and actions to eliminate repetitive work.",
+    "features.auto.desc":
+      "Set triggers and actions to eliminate repetitive work.",
     "features.perms.name": "Permissions",
-    "features.perms.desc": "Granular role controls so everyone sees exactly what they need.",
+    "features.perms.desc":
+      "Granular role controls so everyone sees exactly what they need.",
     "features.analytics.name": "Analytics",
-    "features.analytics.desc": "Track velocity, blockers, and team health at a glance.",
+    "features.analytics.desc":
+      "Track velocity, blockers, and team health at a glance.",
 
     // HOW IT WORKS
     "how.title": "Up and running in minutes",
@@ -82,16 +89,19 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // TESTIMONIALS
     "test.title": "Teams who moved to Flowdesk never looked back",
-    "test.1.quote": "We cut our weekly syncs from 5 to 1 after switching. The async doc system is a game changer.",
+    "test.1.quote":
+      "We cut our weekly syncs from 5 to 1 after switching. The async doc system is a game changer.",
     "test.1.role": "Head of Product",
-    "test.2.quote": "Finally a tool that doesn't need a tool to manage it. Clean, fast, done.",
+    "test.2.quote":
+      "Finally a tool that doesn't need a tool to manage it. Clean, fast, done.",
     "test.2.role": "CTO",
     "test.3.quote": "Onboarded our 40-person team in an afternoon. Incredible.",
     "test.3.role": "Engineering Manager",
 
     // CTA BANNER
     "cta.title": "Ready to make work feel effortless?",
-    "cta.sub": "Join thousands of teams who have transformed the way they work together.",
+    "cta.sub":
+      "Join thousands of teams who have transformed the way they work together.",
     "cta.primary": "Start for free",
     "cta.secondary": "Talk to sales",
 
@@ -106,7 +116,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "footer.integrations": "Integrations",
     "footer.login": "Log in",
     "footer.signup": "Sign up",
-    "footer.copy": "© 2025 Flowdesk, Inc. All rights reserved.",
+    "footer.copy": `© ${new Date().getFullYear()} Flowdesk, Inc. All rights reserved.`,
 
     // LOGIN PAGE
     "login.title": "Welcome back",
@@ -137,21 +147,25 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // CHANGELOG PAGE
     "changelog.title": "Changelog",
-    "changelog.sub": "New updates and improvements to Flowdesk, shipped every week.",
+    "changelog.sub":
+      "New updates and improvements to Flowdesk, shipped every week.",
     "changelog.v240.title": "Automations 2.0",
-    "changelog.v240.desc": "We completely rebuilt our automation engine from the ground up.",
+    "changelog.v240.desc":
+      "We completely rebuilt our automation engine from the ground up.",
     "changelog.v240.f1": "Multi-step triggers",
     "changelog.v240.f2": "Conditional logic branches",
     "changelog.v240.f3": "10x faster execution",
     "changelog.v240.f4": "New pre-built templates library",
     "changelog.v230.title": "Docs get an upgrade",
-    "changelog.v230.desc": "Collaborative docs now support rich embeds and versioning.",
+    "changelog.v230.desc":
+      "Collaborative docs now support rich embeds and versioning.",
     "changelog.v230.f1": "Version history (30 days)",
     "changelog.v230.f2": "Embed Loom videos + Figma files",
     "changelog.v230.f3": "New slash command menu",
     "changelog.v230.f4": "Real-time cursor presence",
     "changelog.v220.title": "Analytics Dashboard",
-    "changelog.v220.desc": "Track your team's velocity and spot blockers before they slow you down.",
+    "changelog.v220.desc":
+      "Track your team's velocity and spot blockers before they slow you down.",
     "changelog.v220.f1": "Burndown charts",
     "changelog.v220.f2": "Cycle time tracking",
     "changelog.v220.f3": "Blocked tasks report",
@@ -168,17 +182,23 @@ export const translations: Record<Language, Record<string, string>> = {
     "docs.sub": "Everything you need to get your team up and running.",
     "docs.search": "Search the docs...",
     "docs.cat1.title": "Getting Started",
-    "docs.cat1.desc": "Set up your workspace in minutes. Invite your team and start your first project today.",
+    "docs.cat1.desc":
+      "Set up your workspace in minutes. Invite your team and start your first project today.",
     "docs.cat2.title": "Tasks & Projects",
-    "docs.cat2.desc": "Learn how to create, assign, and track tasks across all your projects.",
+    "docs.cat2.desc":
+      "Learn how to create, assign, and track tasks across all your projects.",
     "docs.cat3.title": "Team Chat",
-    "docs.cat3.desc": "Threaded conversations, mentions, and notifications. Stay in sync without the noise.",
+    "docs.cat3.desc":
+      "Threaded conversations, mentions, and notifications. Stay in sync without the noise.",
     "docs.cat4.title": "Docs & Pages",
-    "docs.cat4.desc": "Create, collaborate, and share documentation with your entire team.",
+    "docs.cat4.desc":
+      "Create, collaborate, and share documentation with your entire team.",
     "docs.cat5.title": "Automations",
-    "docs.cat5.desc": "Build powerful workflows with triggers and actions. No code required.",
+    "docs.cat5.desc":
+      "Build powerful workflows with triggers and actions. No code required.",
     "docs.cat6.title": "API Reference",
-    "docs.cat6.desc": "Integrate Flowdesk into your own tools with our REST API and webhooks.",
+    "docs.cat6.desc":
+      "Integrate Flowdesk into your own tools with our REST API and webhooks.",
     "docs.guides.title": "Popular guides",
     "docs.g1": "How to set up your first project",
     "docs.g2": "Inviting and managing team members",
@@ -197,13 +217,16 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // PRICING PAGE HERO
     "pricingPage.title": "Plans for every team size",
-    "pricingPage.sub": "Start for free, upgrade as you grow. No surprises, no hidden fees.",
+    "pricingPage.sub":
+      "Start for free, upgrade as you grow. No surprises, no hidden fees.",
 
     // FEATURES PAGE HERO
     "featuresPage.title": "Everything you need to ship faster",
-    "featuresPage.sub": "Discover all the features that make Flowdesk the best workspace for remote teams.",
+    "featuresPage.sub":
+      "Discover all the features that make Flowdesk the best workspace for remote teams.",
     "featuresPage.integrations": "Integrations",
-    "featuresPage.intSub": "Connect Flowdesk with the tools your team already uses.",
+    "featuresPage.intSub":
+      "Connect Flowdesk with the tools your team already uses.",
   },
   es: {
     // NAVBAR
@@ -217,7 +240,8 @@ export const translations: Record<Language, Record<string, string>> = {
     // HERO
     "hero.headline1": "El trabajo de tu equipo,",
     "hero.headline2": "finalmente en un solo lugar.",
-    "hero.sub": "Flowdesk une tareas, docs y chat para que tu equipo pase menos tiempo cambiando pestañas y más tiempo construyendo.",
+    "hero.sub":
+      "Flowdesk une tareas, docs y chat para que tu equipo pase menos tiempo cambiando pestañas y más tiempo construyendo.",
     "hero.cta1": "Empieza gratis",
     "hero.cta2": "Ver cómo funciona",
     "hero.trust": "Gratis para equipos de hasta 5 · Sin tarjeta de crédito",
@@ -228,26 +252,34 @@ export const translations: Record<Language, Record<string, string>> = {
     // FEATURES
     "features.label": "Características",
     "features.title": "Todo lo que tu equipo necesita, nada más",
-    "features.sub": "Creado para equipos async que valoran el enfoque sobre el ruido.",
+    "features.sub":
+      "Creado para equipos async que valoran el enfoque sobre el ruido.",
     "features.tasks.name": "Tableros de tareas",
-    "features.tasks.desc": "Vista kanban, lista o cronograma. Tu equipo, tu flujo de trabajo.",
+    "features.tasks.desc":
+      "Vista kanban, lista o cronograma. Tu equipo, tu flujo de trabajo.",
     "features.chat.name": "Chat de equipo",
-    "features.chat.desc": "Conversaciones anidadas vinculadas a tareas. El contexto siempre incluido.",
+    "features.chat.desc":
+      "Conversaciones anidadas vinculadas a tareas. El contexto siempre incluido.",
     "features.docs.name": "Documentos compartidos",
-    "features.docs.desc": "Escribe, colabora y publica documentos sin salir de Flowdesk.",
+    "features.docs.desc":
+      "Escribe, colabora y publica documentos sin salir de Flowdesk.",
     "features.auto.name": "Automatizaciones",
-    "features.auto.desc": "Configura disparadores y acciones para eliminar trabajo repetitivo.",
+    "features.auto.desc":
+      "Configura disparadores y acciones para eliminar trabajo repetitivo.",
     "features.perms.name": "Permisos",
-    "features.perms.desc": "Control granular de roles para que cada uno vea exactamente lo que necesita.",
+    "features.perms.desc":
+      "Control granular de roles para que cada uno vea exactamente lo que necesita.",
     "features.analytics.name": "Analíticas",
-    "features.analytics.desc": "Monitorea velocidad, bloqueos y salud del equipo de un vistazo.",
+    "features.analytics.desc":
+      "Monitorea velocidad, bloqueos y salud del equipo de un vistazo.",
 
     // HOW IT WORKS
     "how.title": "Listo en minutos",
     "how.step1.title": "Crea tu espacio de trabajo",
     "how.step1.desc": "Configura la base de tu equipo en menos de un minuto.",
     "how.step2.title": "Invita a tu equipo",
-    "how.step2.desc": "Agrega compañeros por email o comparte un enlace para unirse.",
+    "how.step2.desc":
+      "Agrega compañeros por email o comparte un enlace para unirse.",
     "how.step3.title": "Empieza a construir",
     "how.step3.desc": "Colabora en tareas, docs y chat en un solo lugar.",
 
@@ -286,16 +318,20 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // TESTIMONIALS
     "test.title": "Los equipos que migraron a Flowdesk no volvieron atrás",
-    "test.1.quote": "Redujimos nuestras sincronizaciones semanales de 5 a 1. El sistema de docs async es revolucionario.",
+    "test.1.quote":
+      "Redujimos nuestras sincronizaciones semanales de 5 a 1. El sistema de docs async es revolucionario.",
     "test.1.role": "Directora de Producto",
-    "test.2.quote": "Por fin una herramienta que no necesita otra herramienta para gestionarla. Limpia, rápida, lista.",
+    "test.2.quote":
+      "Por fin una herramienta que no necesita otra herramienta para gestionarla. Limpia, rápida, lista.",
     "test.2.role": "CTO",
-    "test.3.quote": "Incorporamos a nuestro equipo de 40 personas en una tarde. Increíble.",
+    "test.3.quote":
+      "Incorporamos a nuestro equipo de 40 personas en una tarde. Increíble.",
     "test.3.role": "Gerente de Ingeniería",
 
     // CTA BANNER
     "cta.title": "¿Listo para que el trabajo fluya sin esfuerzo?",
-    "cta.sub": "Únete a miles de equipos que han transformado su forma de trabajar juntos.",
+    "cta.sub":
+      "Únete a miles de equipos que han transformado su forma de trabajar juntos.",
     "cta.primary": "Empieza gratis",
     "cta.secondary": "Hablar con ventas",
 
@@ -310,7 +346,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "footer.integrations": "Integraciones",
     "footer.login": "Iniciar sesión",
     "footer.signup": "Registrarse",
-    "footer.copy": "© 2025 Flowdesk, Inc. Todos los derechos reservados.",
+    "footer.copy": `© ${new Date().getFullYear()} Flowdesk, Inc. Todos los derechos reservados.`,
 
     // LOGIN PAGE
     "login.title": "Bienvenido de vuelta",
@@ -341,21 +377,25 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // CHANGELOG PAGE
     "changelog.title": "Actualizaciones",
-    "changelog.sub": "Nuevas actualizaciones y mejoras de Flowdesk, lanzadas cada semana.",
+    "changelog.sub":
+      "Nuevas actualizaciones y mejoras de Flowdesk, lanzadas cada semana.",
     "changelog.v240.title": "Automations 2.0",
-    "changelog.v240.desc": "Reconstruimos por completo nuestro motor de automatizaciones desde cero.",
+    "changelog.v240.desc":
+      "Reconstruimos por completo nuestro motor de automatizaciones desde cero.",
     "changelog.v240.f1": "Disparadores de múltiples pasos",
     "changelog.v240.f2": "Ramas de lógica condicional",
     "changelog.v240.f3": "Ejecución 10x más rápida",
     "changelog.v240.f4": "Nueva biblioteca de plantillas",
     "changelog.v230.title": "Los Docs reciben una actualización",
-    "changelog.v230.desc": "Los documentos colaborativos ahora soportan embeds enriquecidos y versiones.",
+    "changelog.v230.desc":
+      "Los documentos colaborativos ahora soportan embeds enriquecidos y versiones.",
     "changelog.v230.f1": "Historial de versiones (30 días)",
     "changelog.v230.f2": "Incrustar videos de Loom + Figma",
     "changelog.v230.f3": "Nuevo menú de comandos slash",
     "changelog.v230.f4": "Presencia de cursor en tiempo real",
     "changelog.v220.title": "Panel de Analíticas",
-    "changelog.v220.desc": "Monitorea la velocidad de tu equipo y detecta bloqueos antes de que te frenen.",
+    "changelog.v220.desc":
+      "Monitorea la velocidad de tu equipo y detecta bloqueos antes de que te frenen.",
     "changelog.v220.f1": "Gráficas de progreso",
     "changelog.v220.f2": "Seguimiento de tiempo de ciclo",
     "changelog.v220.f3": "Reporte de tareas bloqueadas",
@@ -372,17 +412,23 @@ export const translations: Record<Language, Record<string, string>> = {
     "docs.sub": "Todo lo que necesitas para poner en marcha a tu equipo.",
     "docs.search": "Buscar en la documentación...",
     "docs.cat1.title": "Primeros Pasos",
-    "docs.cat1.desc": "Configura tu espacio en minutos. Invita a tu equipo y empieza tu primer proyecto hoy.",
+    "docs.cat1.desc":
+      "Configura tu espacio en minutos. Invita a tu equipo y empieza tu primer proyecto hoy.",
     "docs.cat2.title": "Tareas y Proyectos",
-    "docs.cat2.desc": "Aprende a crear, asignar y hacer seguimiento de tareas en todos tus proyectos.",
+    "docs.cat2.desc":
+      "Aprende a crear, asignar y hacer seguimiento de tareas en todos tus proyectos.",
     "docs.cat3.title": "Chat de Equipo",
-    "docs.cat3.desc": "Conversaciones anidadas, menciones y notificaciones. Mantente sincronizado sin el ruido.",
+    "docs.cat3.desc":
+      "Conversaciones anidadas, menciones y notificaciones. Mantente sincronizado sin el ruido.",
     "docs.cat4.title": "Docs y Páginas",
-    "docs.cat4.desc": "Crea, colabora y comparte documentación con todo tu equipo.",
+    "docs.cat4.desc":
+      "Crea, colabora y comparte documentación con todo tu equipo.",
     "docs.cat5.title": "Automatizaciones",
-    "docs.cat5.desc": "Crea flujos de trabajo potentes con disparadores y acciones. Sin código.",
+    "docs.cat5.desc":
+      "Crea flujos de trabajo potentes con disparadores y acciones. Sin código.",
     "docs.cat6.title": "Referencia API",
-    "docs.cat6.desc": "Integra Flowdesk en tus propias herramientas con nuestra REST API y webhooks.",
+    "docs.cat6.desc":
+      "Integra Flowdesk en tus propias herramientas con nuestra REST API y webhooks.",
     "docs.guides.title": "Guías populares",
     "docs.g1": "Cómo configurar tu primer proyecto",
     "docs.g2": "Invitar y gestionar miembros del equipo",
@@ -401,12 +447,15 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // PRICING PAGE HERO
     "pricingPage.title": "Planes para cada tamaño de equipo",
-    "pricingPage.sub": "Empieza gratis, escala según creces. Sin sorpresas ni tarifas ocultas.",
+    "pricingPage.sub":
+      "Empieza gratis, escala según creces. Sin sorpresas ni tarifas ocultas.",
 
     // FEATURES PAGE HERO
     "featuresPage.title": "Todo lo que necesitas para lanzar más rápido",
-    "featuresPage.sub": "Descubre todas las características que hacen de Flowdesk el mejor espacio de trabajo para equipos remotos.",
+    "featuresPage.sub":
+      "Descubre todas las características que hacen de Flowdesk el mejor espacio de trabajo para equipos remotos.",
     "featuresPage.integrations": "Integraciones",
-    "featuresPage.intSub": "Conecta Flowdesk con las herramientas que tu equipo ya usa.",
+    "featuresPage.intSub":
+      "Conecta Flowdesk con las herramientas que tu equipo ya usa.",
   },
-}
+};

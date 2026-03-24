@@ -1,35 +1,35 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { useLanguage } from "@/context/language-context"
-import { Eye, EyeOff, Loader2, CheckCircle2 } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { useLanguage } from "@/context/language-context";
+import { Eye, EyeOff, Loader2, CheckCircle2 } from "lucide-react";
 
 export default function SignupPage() {
-  const { t } = useLanguage()
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [showPassword, setShowPassword] = useState(false)
-  const [agreed, setAgreed] = useState(false)
-  const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
+  const { t } = useLanguage();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [agreed, setAgreed] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = () => {
-    if (!agreed) return
-    setLoading(true)
+    if (!agreed) return;
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-      setSuccess(true)
-    }, 1500)
-  }
+      setLoading(false);
+      setSuccess(true);
+    }, 1500);
+  };
 
   return (
     <main className="bg-[#F8FAFC] min-h-screen flex flex-col">
       <Navbar />
-      
+
       {/* Hero */}
       <section className="bg-[#0F172A] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -38,7 +38,7 @@ export default function SignupPage() {
           </h1>
         </div>
       </section>
-      
+
       {/* Card Section */}
       <section className="py-16 md:py-24 flex-1 flex items-start justify-center">
         <div className="w-full max-w-md mx-4 sm:mx-auto">
@@ -118,7 +118,11 @@ export default function SignupPage() {
                         onClick={() => setShowPassword(!showPassword)}
                         className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
                       >
-                        {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                        {showPassword ? (
+                          <EyeOff className="w-5 h-5" />
+                        ) : (
+                          <Eye className="w-5 h-5" />
+                        )}
                       </button>
                     </div>
                   </div>
@@ -135,18 +139,28 @@ export default function SignupPage() {
                       }`}
                     >
                       {agreed && (
-                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       )}
                     </button>
                     <span className="text-sm text-gray-600">
                       {t("signup.agree")}{" "}
-                      <Link href="/terms" className="text-[#0EA5E9] hover:underline">
+                      <Link href="#" className="text-[#0EA5E9] hover:underline">
                         {t("signup.terms")}
                       </Link>{" "}
                       {t("signup.and")}{" "}
-                      <Link href="/privacy" className="text-[#0EA5E9] hover:underline">
+                      <Link href="#" className="text-[#0EA5E9] hover:underline">
                         {t("signup.privacy")}
                       </Link>
                     </span>
@@ -171,7 +185,10 @@ export default function SignupPage() {
 
                 {/* Login link */}
                 <p className="text-center text-sm text-gray-600 mt-6">
-                  <Link href="/login" className="text-[#0EA5E9] hover:underline">
+                  <Link
+                    href="/login"
+                    className="text-[#0EA5E9] hover:underline"
+                  >
                     {t("signup.login")}
                   </Link>
                 </p>
@@ -180,8 +197,8 @@ export default function SignupPage() {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </main>
-  )
+  );
 }

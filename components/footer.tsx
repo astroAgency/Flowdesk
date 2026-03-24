@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Twitter, Linkedin, Github } from "lucide-react"
-import { useLanguage } from "@/context/language-context"
+import Link from "next/link";
+import { useLanguage } from "@/context/language-context";
 
 export function Footer() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   const footerLinks = {
     product: [
@@ -20,7 +19,7 @@ export function Footer() {
       { href: "/docs", labelKey: "footer.docs" },
       { href: "/features#integrations", labelKey: "footer.integrations" },
     ],
-  }
+  };
 
   return (
     <footer className="bg-navy py-16">
@@ -42,28 +41,14 @@ export function Footer() {
               </div>
               <span className="text-white font-bold text-xl">Flowdesk</span>
             </Link>
-            <p className="text-gray-400 text-sm mb-6">
-              {t("footer.desc")}
-            </p>
-            <div className="flex items-center gap-4">
-              <Link href="#" className="w-11 h-11 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="w-11 h-11 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="w-11 h-11 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
-                <Github className="w-5 h-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-            </div>
+            <p className="text-gray-400 text-sm mb-6">{t("footer.desc")}</p>
           </div>
 
           {/* Product Column */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4">{t("footer.product")}</h3>
+            <h3 className="text-white font-semibold text-sm mb-4">
+              {t("footer.product")}
+            </h3>
             <ul className="flex flex-col gap-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
@@ -80,7 +65,9 @@ export function Footer() {
 
           {/* Resources Column */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4">{t("footer.resources")}</h3>
+            <h3 className="text-white font-semibold text-sm mb-4">
+              {t("footer.resources")}
+            </h3>
             <ul className="flex flex-col gap-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.labelKey}>
@@ -102,5 +89,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useLanguage } from "@/context/language-context"
+import Link from "next/link";
+import { useLanguage } from "@/context/language-context";
 
 export function CTABanner() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   return (
     <section className="bg-gradient-to-r from-teal to-teal-dark py-16 md:py-24">
@@ -28,7 +28,7 @@ export function CTABanner() {
             {t("cta.primary")}
           </Link>
           <Link
-            href="#"
+            href="/signup"
             className="border border-white/30 text-white rounded-lg px-8 py-4 font-semibold hover:bg-white/10 transition-colors w-full sm:w-auto text-center"
           >
             {t("cta.secondary")}
@@ -36,5 +36,5 @@ export function CTABanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }

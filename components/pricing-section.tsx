@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Check } from "lucide-react"
-import { useLanguage } from "@/context/language-context"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Check } from "lucide-react";
+import { useLanguage } from "@/context/language-context";
 
 export function PricingSection() {
-  const [isAnnual, setIsAnnual] = useState(false)
-  const [justSwitched, setJustSwitched] = useState(false)
-  const { t } = useLanguage()
+  const [isAnnual, setIsAnnual] = useState(false);
+  const [justSwitched, setJustSwitched] = useState(false);
+  const { t } = useLanguage();
 
   const handleToggle = () => {
-    setIsAnnual(!isAnnual)
+    setIsAnnual(!isAnnual);
     if (!isAnnual) {
-      setJustSwitched(true)
+      setJustSwitched(true);
     }
-  }
+  };
 
   useEffect(() => {
     if (justSwitched) {
-      const timer = setTimeout(() => setJustSwitched(false), 600)
-      return () => clearTimeout(timer)
+      const timer = setTimeout(() => setJustSwitched(false), 600);
+      return () => clearTimeout(timer);
     }
-  }, [justSwitched])
+  }, [justSwitched]);
 
   const plans = [
     {
@@ -71,7 +71,7 @@ export function PricingSection() {
       ctaKey: "pricing.ent.cta",
       highlighted: false,
     },
-  ]
+  ];
 
   return (
     <section className="bg-white py-16 md:py-24">
@@ -84,23 +84,33 @@ export function PricingSection() {
 
           {/* Toggle */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <span className={`text-sm font-medium ${!isAnnual ? "text-gray-900" : "text-gray-400"}`}>
+            <span
+              className={`text-sm font-medium ${!isAnnual ? "text-gray-900" : "text-gray-400"}`}
+            >
               {t("pricing.monthly")}
             </span>
             <button
               onClick={handleToggle}
-              style={{ backgroundColor: isAnnual ? '#0EA5E9' : '#CBD5E1' }}
-              className="relative w-14 h-7 rounded-full transition-all duration-300 flex-shrink-0"
+              style={{ backgroundColor: isAnnual ? "#0EA5E9" : "#CBD5E1" }}
+              className="relative w-14 h-7 rounded-full transition-all duration-300 shrink-0"
               aria-label="Toggle annual billing"
             >
               <span
                 className="absolute top-1 w-5 h-5 bg-white rounded-full shadow-sm transition-transform duration-300"
-                style={{ transform: isAnnual ? 'translateX(28px)' : 'translateX(4px)' }}
+                style={{
+                  transform: isAnnual ? "translateX(2px)" : "translateX(-22px)",
+                }}
               />
             </button>
-            <span className={`text-sm font-medium ${isAnnual ? "text-gray-900" : "text-gray-400"}`}>
+            <span
+              className={`text-sm font-medium ${isAnnual ? "text-gray-900" : "text-gray-400"}`}
+            >
               {t("pricing.annual")}
-              <span className={`ml-2 text-xs font-semibold transition-all duration-300 ${isAnnual ? 'text-teal' : 'text-gray-400'} ${justSwitched ? 'scale-110' : 'scale-100'}`}>{t("pricing.save")}</span>
+              <span
+                className={`ml-2 text-xs font-semibold transition-all duration-300 ${isAnnual ? "text-teal" : "text-gray-400"} ${justSwitched ? "scale-110" : "scale-100"}`}
+              >
+                {t("pricing.save")}
+              </span>
             </span>
           </div>
         </div>
@@ -126,22 +136,28 @@ export function PricingSection() {
               )}
 
               {/* Plan name */}
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{t(plan.nameKey)}</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                {t(plan.nameKey)}
+              </h3>
 
               {/* Price */}
               <div className="mb-4">
                 {plan.monthlyPrice !== null ? (
                   <>
                     <span
-                      key={isAnnual ? 'annual' : 'monthly'}
+                      key={isAnnual ? "annual" : "monthly"}
                       className="text-4xl font-bold text-gray-900 transition-all"
                     >
                       ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
                     </span>
-                    <span className="text-gray-600">{t("pricing.perUser")}</span>
+                    <span className="text-gray-600">
+                      {t("pricing.perUser")}
+                    </span>
                   </>
                 ) : (
-                  <span className="text-4xl font-bold text-gray-900">{t("pricing.custom")}</span>
+                  <span className="text-4xl font-bold text-gray-900">
+                    {t("pricing.custom")}
+                  </span>
                 )}
               </div>
 
@@ -153,7 +169,9 @@ export function PricingSection() {
                 {plan.features.map((featureKey) => (
                   <li key={featureKey} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 text-sm">{t(featureKey)}</span>
+                    <span className="text-gray-600 text-sm">
+                      {t(featureKey)}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -174,5 +192,5 @@ export function PricingSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
